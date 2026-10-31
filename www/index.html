@@ -1,0 +1,60 @@
+<!doctype html>
+<html data-color-scheme="light" data-size="md" lang="nb">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="light dark" name="color-scheme"/>
+    <meta content="Logg inn på J4D." name="description"/>
+
+    <title>Innlogging – J4D</title>
+
+    <link href="https://id.j4d.dev/" rel="canonical"/>
+    <link href="https://cdn.jsdelivr.net/npm/@digdir/designsystemet-css@1.23.0/dist/src/index.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@digdir/designsystemet-css@1.23.0/dist/theme/designsystemet.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <script src="assets/js/theme.js"></script>
+    <script defer src="assets/js/innlogging.js"></script>
+</head>
+<body>
+<header class="container">
+    <a aria-label="J4D – innlogging" class="wordmark ds-focus" href="./">J4D</a>
+    <nav aria-label="Temavalg">
+        <button aria-label="Mørk modus" aria-pressed="false" class="ds-button theme-toggle" data-variant="tertiary" hidden id="theme-toggle" title="Bytt fargetema" type="button">
+            <svg aria-hidden="true" class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+                <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>
+            </svg>
+            <svg aria-hidden="true" class="sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
+            </svg>
+        </button>
+    </nav>
+</header>
+
+<main class="container">
+    <section aria-labelledby="innlogging-heading" class="innlogging-panel">
+        <div class="intro">
+            <h1 class="ds-heading" id="innlogging-heading">Logg inn</h1>
+        </div>
+        <form id="innlogging-form" novalidate>
+            <div class="ds-field">
+                <label class="ds-label" for="email">E-post</label>
+                <input autocomplete="username" class="ds-input" id="email" required spellcheck="false" type="email"/>
+            </div>
+            <div class="ds-field">
+                <label class="ds-label" for="password">Passord</label>
+                <input autocomplete="current-password" class="ds-input" id="password" required type="password"/>
+            </div>
+            <button class="ds-button" data-variant="primary" disabled id="innlogging-submit" type="submit">Logg inn</button>
+            <noscript><p class="form-note ds-paragraph">Dette er en forhåndsvisning av innloggingssiden.</p></noscript>
+        </form>
+        <p class="back-link"><a class="ds-link" href="https://j4d.dev/">Gå til j4d.dev</a></p>
+    </section>
+</main>
+
+<footer class="container">
+    <p>J4D · id.j4d.dev · Bygget med <a class="ds-link" href="https://designsystemet.no/" rel="noopener noreferrer" target="_blank">Designsystemet</a></p>
+</footer>
+</body>
+</html>
