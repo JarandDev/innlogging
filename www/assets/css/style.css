@@ -195,14 +195,8 @@ form > .ds-button {
     width: 100%;
 }
 
-.back-link {
-    margin-block: 1.5rem 0;
-    text-align: center;
-    font-size: 0.875rem;
-}
-
 .form-note {
-    margin: 0;
+    margin: 0 0 1.5rem;
     color: var(--ds-color-neutral-text-subtle, #65534a);
     font-size: 0.875rem;
     line-height: 1.65;

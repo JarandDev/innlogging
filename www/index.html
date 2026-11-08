@@ -14,7 +14,6 @@
     <link href="assets/css/style.css" rel="stylesheet"/>
 
     <script src="assets/js/theme.js"></script>
-    <script defer src="assets/js/innlogging.js"></script>
 </head>
 <body>
 <a class="skip-link ds-link" href="#main">Hopp til innhold</a>
@@ -27,6 +26,7 @@
         </ul>
     </nav>
     <div class="header-actions">
+        <a aria-current="page" class="ds-button innlogging" data-variant="secondary" href="https://sso.j4d.dev/">Logg inn</a>
         <button aria-label="Mørk modus" aria-pressed="false" class="ds-button theme-toggle" data-variant="tertiary" hidden id="theme-toggle" title="Bytt fargetema" type="button">
             <svg aria-hidden="true" class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
                 <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>
@@ -44,7 +44,8 @@
         <div class="intro">
             <h1 class="ds-heading" id="innlogging-heading">Logg inn</h1>
         </div>
-        <form id="innlogging-form" novalidate>
+        <p class="form-note ds-paragraph">Dette er en forhåndsvisning. Innlogging er ikke tilgjengelig ennå.</p>
+        <form id="innlogging-form">
             <div class="ds-field">
                 <label class="ds-label" for="email">E-post</label>
                 <input autocomplete="username" class="ds-input" id="email" required spellcheck="false" type="email"/>
@@ -54,9 +55,7 @@
                 <input autocomplete="current-password" class="ds-input" id="password" required type="password"/>
             </div>
             <button class="ds-button" data-variant="primary" disabled id="innlogging-submit" type="submit">Logg inn</button>
-            <noscript><p class="form-note ds-paragraph">Dette er en forhåndsvisning av innloggingssiden.</p></noscript>
         </form>
-        <p class="back-link"><a class="ds-link" href="https://j4d.dev/">Gå til j4d.dev</a></p>
     </section>
 </main>
 
