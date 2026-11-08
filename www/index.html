@@ -17,9 +17,16 @@
     <script defer src="assets/js/innlogging.js"></script>
 </head>
 <body>
+<a class="skip-link ds-link" href="#main">Hopp til innhold</a>
 <header class="container">
-    <a aria-label="J4D – innlogging" class="wordmark ds-focus" href="./">J4D</a>
-    <nav aria-label="Temavalg">
+    <a aria-label="J4D – hjem" class="wordmark ds-focus" href="https://j4d.dev/">J4D</a>
+    <nav aria-label="Hovedmeny">
+        <ul class="navigation">
+            <li><a class="ds-link" href="https://j4d.dev/">Hjem</a></li>
+            <li><a class="ds-link" href="https://txt.j4d.dev/">Tekster</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
         <button aria-label="Mørk modus" aria-pressed="false" class="ds-button theme-toggle" data-variant="tertiary" hidden id="theme-toggle" title="Bytt fargetema" type="button">
             <svg aria-hidden="true" class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24">
                 <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>
@@ -29,10 +36,10 @@
                 <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>
             </svg>
         </button>
-    </nav>
+    </div>
 </header>
 
-<main class="container">
+<main class="container" id="main" tabindex="-1">
     <section aria-labelledby="innlogging-heading" class="innlogging-panel">
         <div class="intro">
             <h1 class="ds-heading" id="innlogging-heading">Logg inn</h1>
